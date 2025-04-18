@@ -29,9 +29,13 @@ class LoginPage extends StatelessWidget {
     final TextEditingController _nameController = TextEditingController();
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Ismingizni kiriting'),
+        backgroundColor: Colors.black,
+        title: const Text(
+          'Ismingizni kiriting',
+          style: TextStyle(color: Colors.white),
+        ),
         centerTitle: true,
       ),
       body: Center(
@@ -41,6 +45,7 @@ class LoginPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextField(
+                cursorColor: Colors.white,
                 controller: _nameController,
                 decoration: const InputDecoration(
                   labelText: 'Ismingiz',
@@ -60,7 +65,10 @@ class LoginPage extends StatelessWidget {
                     );
                   }
                 },
-                child: const Text('Kirish'),
+                child: const Text(
+                  'Kirish',
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
             ],
           ),
@@ -108,7 +116,7 @@ class _HomePageState extends State<HomePage> {
       "title": "PlayStation 5",
       "category": "PlayStation",
       "image":
-          "https://frankfurt.apollo.olxcdn.com/v1/files/53m0m8q4v1lf3-UZ/image",
+          "https://cdn.mediainvest.uz/corecms/post-thumbnails/01J7FQP0J84CW6SGBAM2K1EH73.webp",
       "price": "499 USD",
       "specs": "825GB SSD, DualSense kontrol"
     },
@@ -169,32 +177,33 @@ class _HomePageState extends State<HomePage> {
     {
       "title": "VR glass",
       "category": "Virtual 3d",
-      "image":
-          "https://m.media-amazon.com/images/I/51-X+HBW4JL.jpg",
+      "image": "https://m.media-amazon.com/images/I/51-X+HBW4JL.jpg",
       "price": "739 USD",
       "specs": "5.3K video, touch pad, real feeling"
     },
     {
       "title": "play station 4",
       "category": "PlayStation",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgADzKoqojC1u6oxuH3liJWno0NrhKxg3Lzw&s"
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYWGmpRRn5xR4Yf3hiOZ3aCk-r0cstiGZ6kA&s",
+      "image":
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgADzKoqojC1u6oxuH3liJWno0NrhKxg3Lzw&s"
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYWGmpRRn5xR4Yf3hiOZ3aCk-r0cstiGZ6kA&s",
       "price": "179 USD",
       "specs": "1 TB , HDMI , 5 free games"
     },
     {
-      "title": "GeForce RTX 4090, 24GB GDRR6X, 384-Bit",
+      "title": "GeForce RTX 4090, 24GB RAM",
       "category": "Video card",
-      "image": ""
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYWGmpRRn5xR4Yf3hiOZ3aCk-r0cstiGZ6kA&s",
+      "image":
+          "https://m.media-amazon.com/images/I/51c1zFDNVmL._AC_SL1003_.jpg",
       "price": "1 629 USD",
-      "specs": "All games more 300 FPS , LdPlayer, BlueStacks don't crash"
+      "specs": "All games more 300 FPS"
     },
     {
       "title": "Giroskuter",
       "category": "Cars",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4DYXQPBCP8KZVknfhVm3KAGbg-WrSW04cLQ&s"
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYWGmpRRn5xR4Yf3hiOZ3aCk-r0cstiGZ6kA&s",
+      "image":
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4DYXQPBCP8KZVknfhVm3KAGbg-WrSW04cLQ&s"
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYWGmpRRn5xR4Yf3hiOZ3aCk-r0cstiGZ6kA&s",
       "price": "110 USD",
       "specs": "more 2 hours battery for < 20 kg"
     },
@@ -202,25 +211,25 @@ class _HomePageState extends State<HomePage> {
       "title": "Vector",
       "category": "Laptop",
       "image": "https://i.imgur.com/m8py0Kk.jpg"
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYWGmpRRn5xR4Yf3hiOZ3aCk-r0cstiGZ6kA&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYWGmpRRn5xR4Yf3hiOZ3aCk-r0cstiGZ6kA&s",
       "price": "629 USD",
-      "specs": "NVIDIA Rtx 2080 , Itel Core i5 , 15.6'' FullHD IPS 144Hz "
+      "specs": "NVIDIA Rtx 2080 , Intel Core i5"
     },
     {
       "title": "Asus Rog Zephyrus",
       "category": "NoteBook",
-      "image": "https://www.notebookcheck-ru.com/uploads/tx_nbc2/4zu3_Asus_ROG_Zephyrus_Duo_16_GX650R.jpg"
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYWGmpRRn5xR4Yf3hiOZ3aCk-r0cstiGZ6kA&s",
+      "image":
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThFtY0GBjKfZIW7YUBQW_lHIiOrZ1pYhIv2vK_h4ut_7WkZUzZsex_JnPPV4ESHYuWx2s&usqp=CAU",
       "price": "1699 USD",
-      "specs": "GeForce™ NVIDIA RTX4060 , 1TB , Intel® Core™ Ultra 9-185H"
+      "specs": "GeForce™ 5080 Intel Core i9 "
     },
     {
       "title": "Air Pods Max",
       "category": "Headphones",
-      "image": "https://cdn.mediapark.uz/imgs/fa9dc18d-58ca-417b-980d-b98e7f8a9b7b.webp"
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYWGmpRRn5xR4Yf3hiOZ3aCk-r0cstiGZ6kA&s",
+      "image":
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk0L8sEGcipnLqvQejy_z6VxcNEdlzn5K_CCcq2HiMw3q5oHQ9X0ny-Jjb67UzaulazXY&usqp=CAU",
       "price": "319 USD",
-      "specs": "Noise reduction , more 5-6 hours battery ,  "
+      "specs": "Noise reduction , more 5-6 hours battery ,"
     },
   ];
 
@@ -383,19 +392,30 @@ class _HomePageState extends State<HomePage> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: const Text('Viktorina'),
+          backgroundColor: Colors.black,
+          title: const Text(
+            'Viktorina',
+            style: TextStyle(color: Colors.white),
+          ),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text('Nimani qo\'shamiz? Keyingi Yangilashlarda'),
+              const Text(
+                'Nimani qo\'shamiz? Keyingi Yangilashlarda',
+                style: TextStyle(color: Colors.white),
+              ),
               const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () {
                   _saveQuizResponse('Kategoriyalar');
+                  BorderRadius.circular(10);
                   Navigator.of(context).pop();
                   _showResponseAccepted();
                 },
-                child: const Text('Kategoriyalar'),
+                child: const Text(
+                  'Kategoriyalar' ,
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
               ElevatedButton(
                 onPressed: () {
@@ -403,15 +423,23 @@ class _HomePageState extends State<HomePage> {
                   Navigator.of(context).pop();
                   _showResponseAccepted();
                 },
-                child: const Text('Global odamlarni ko\'rish'),
+                child: const Text(
+                  'Global odamlarni ko\'rish',
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
               ElevatedButton(
                 onPressed: () {
-                  _saveQuizResponse('O\'yin katalog');
+                  _saveQuizResponse(
+                    'O\'yin katalog',
+                  );
                   Navigator.of(context).pop();
                   _showResponseAccepted();
                 },
-                child: const Text('O\'yin katalog'),
+                child: const Text(
+                  'O\'yin katalog',
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
               ElevatedButton(
                 onPressed: () {
@@ -420,7 +448,9 @@ class _HomePageState extends State<HomePage> {
                   _showResponseAccepted();
                 },
                 child: const Text(
-                    'o\'yinlar o\'ynab adminlik serverini ytib olish'),
+                  'o\'yinlar o\'ynab adminlik serverini yutib olish',
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
             ],
           ),
@@ -516,11 +546,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 50.0,
-        // AppBarni kattalashtirish
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.white, Colors.white],
+              colors: [Colors.black, Colors.black],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
@@ -529,11 +558,11 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         title: const Text(
           'Market place',
-          style: TextStyle(color: Colors.black, fontSize: 24),
+          style: TextStyle(color: Colors.white, fontSize: 24),
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.home, color: Colors.black),
+            icon: const Icon(Icons.home, color: Colors.white),
             onPressed: () {
               Navigator.pushReplacement(
                 context,
@@ -542,7 +571,7 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           IconButton(
-            icon: const Icon(Icons.search, color: Colors.black),
+            icon: const Icon(Icons.search, color: Colors.white),
             onPressed: () {
               showSearch(
                   context: context,
@@ -550,7 +579,7 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           IconButton(
-            icon: const Icon(Icons.quiz, color: Colors.black),
+            icon: const Icon(Icons.quiz, color: Colors.white),
             onPressed: _showQuiz,
           ),
         ],
@@ -577,7 +606,7 @@ class _HomePageState extends State<HomePage> {
                 Text(
                   widget.name,
                   style: const TextStyle(
-                      fontSize: 20, // Ism kattaligi
+                      fontSize: 20,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
@@ -591,7 +620,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 if (widget.name == 'Admin2' ||
-                    widget.name == 'admin000aspirine' ||
+                    widget.name == 'admin000' ||
                     widget.name == 'admin1112011' ||
                     widget.name == 'admin525252')
                   const Text(
@@ -707,7 +736,7 @@ class _HomePageState extends State<HomePage> {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Colors.grey, Colors.grey],
+            colors: [Colors.black, Colors.black],
           ),
         ),
         child: LayoutBuilder(
