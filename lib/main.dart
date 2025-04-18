@@ -236,7 +236,7 @@ class _HomePageState extends State<HomePage> {
   List<Map<String, dynamic>> filteredGadgetsList = [];
   Timer? _timer;
   String profileImage =
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmZUq_im5xfAwetyOB8xgrYrDcN4yi4-naug4CwlwFY4o4MD27XX5mdA2rVRgIuml_SHs&usqp=CAU';
+      'https://www.researchgate.net/publication/335975371/figure/fig1/AS:806095123652619@1569199462871/Hacker-stock-photo-Image-credit-hacker-1-iaBeta-C-2017-Public-Domain.png';
   List<String> questions = [];
   List<String> quizResponses = [];
 
@@ -610,9 +610,10 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
-                if (widget.name == 'MuhammadY2011')
+                if (widget.name == 'MuhammadY2011' ||
+                    widget.name == "MainP001")
                   const Text(
-                    "Prezident",
+                    "Президент",
                     style: TextStyle(
                       fontSize: 18,
                       color: Colors.yellow,
@@ -624,10 +625,10 @@ class _HomePageState extends State<HomePage> {
                     widget.name == 'admin1112011' ||
                     widget.name == 'admin525252')
                   const Text(
-                    "Admin",
+                    "Главный Администраторы",
                     style: TextStyle(
                       fontSize: 18,
-                      color: Colors.yellow,
+                      color: Colors.purpleAccent,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -656,7 +657,7 @@ class _HomePageState extends State<HomePage> {
                   title: const Text("Telegram Channel",
                       style: TextStyle(color: Colors.white)),
                   onTap: () {
-                    _launchURL("https://t.me/nownewsuz");
+                    _launchURL("https://t.me/MarketPlace_204");
                   },
                 ),
                 const Divider(color: Colors.white),
@@ -786,7 +787,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       TextButton(
                         onPressed: () =>
-                            _launchURL(filteredGadgetsList[index]["url"]),
+                            _launchURL(filteredGadgetsList[index]["https://www.apple.com/uz/airpods-max/"]),
                         child: const Text('Batafsil',
                             style: TextStyle(fontSize: 12)),
                       ),
